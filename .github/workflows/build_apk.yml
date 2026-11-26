@@ -25,14 +25,13 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.24.5'
-
-      - name: Show Flutter Version
-        run: flutter --version
+          channel: stable
 
       - name: Install dependencies
         run: flutter pub get
-        - name: Check app_links dependency
-  run: flutter pub deps --style=tree
+
+      - name: Check app_links dependency
+        run: flutter pub deps --style=tree
 
       - name: Build APK
         run: |
