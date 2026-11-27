@@ -6,7 +6,7 @@
     <application
         android:label="WorthIt"
         android:name="${applicationName}"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/ic_launcher">
 
         <activity
             android:name=".MainActivity"
